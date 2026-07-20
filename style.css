@@ -451,5 +451,223 @@ button:hover{
     font-size:28px;
 
 }
+    
 
-  }
+    }
+/* =========================
+   FINAL SURPRISE EFFECTS
+========================= */
+
+
+.final-page{
+
+    background:
+    linear-gradient(135deg,#120018,#064f3c,#ff9fc9);
+
+}
+
+
+
+.final-card{
+
+    animation:
+    finalAppear 2s ease;
+
+}
+
+
+
+@keyframes finalAppear{
+
+    from{
+
+        opacity:0;
+        transform:scale(.7) translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1) translateY(0);
+
+    }
+
+}
+
+
+
+.final-card h1{
+
+    color:#ffd1e8;
+
+    text-shadow:
+
+    0 0 20px #ff75b5;
+
+}
+
+
+
+.final-photo{
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin-top:25px;
+
+    border:5px solid #ffd1e8;
+
+    box-shadow:
+
+    0 0 40px #ff75b5;
+
+    animation:
+
+    photoGlow 3s infinite;
+
+}
+
+
+
+@keyframes photoGlow{
+
+    50%{
+
+        transform:scale(1.05);
+
+        box-shadow:
+
+        0 0 70px #ffb6d9;
+
+    }
+
+}
+
+
+
+.love-box{
+
+    margin-top:30px;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    background:
+
+    rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+    line-height:1.8;
+
+    animation:
+
+    glowBox 3s infinite;
+
+}
+
+
+
+@keyframes glowBox{
+
+    50%{
+
+        box-shadow:
+
+        0 0 35px pink;
+
+    }
+
+}
+
+
+
+/* Floating Rose Petals */
+
+.petals:before{
+
+    content:"🌹 🌸 🌹 🌸 🌹";
+
+    position:absolute;
+
+    top:-100px;
+
+    left:0;
+
+    width:100%;
+
+    font-size:35px;
+
+    animation:
+
+    roseFall 10s linear infinite;
+
+}
+
+
+
+@keyframes roseFall{
+
+    from{
+
+        transform:translateY(-100px);
+
+    }
+
+    to{
+
+        transform:translateY(120vh);
+
+    }
+
+}
+
+
+
+/* Firework Sparkles */
+
+.firework{
+
+    position:fixed;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:white;
+
+    pointer-events:none;
+
+    animation:
+
+    explode 1s forwards;
+
+}
+
+
+
+@keyframes explode{
+
+    to{
+
+        transform:
+
+        translate(
+        calc(100px - 200px * random()),
+        calc(100px - 200px * random())
+        );
+
+        opacity:0;
+
+    }
+
+}
