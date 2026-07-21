@@ -460,7 +460,7 @@ transform:translateY(-500px) rotate(360deg);
 
 }
 
-}
+
 
 /* Mobile */
 
@@ -512,7 +512,7 @@ font-size:17px;
 
 }
 
-  }
+  
 /* ===========================
    STYLE PART 3
 =========================== */
@@ -782,7 +782,6 @@ text-shadow:
 0 0 60px deeppink;
 }
 
-}
 
 /* Image Hover */
 
@@ -837,8 +836,6 @@ grid-template-columns:1fr;
 grid-template-columns:repeat(2,1fr);
 }
 
-}
-}
 
 /* ===========================
    STYLE PART 5
